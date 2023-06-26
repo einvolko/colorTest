@@ -46,7 +46,7 @@ class ViewController: UIViewController {
         redSloder.value = 0.5
         greenSlider.value = 0.5
         blueSlider.value = 0.5
-        colorLabel.text = ""
+        
         //print(nameColorArray[randomIndex])
     }
     
@@ -58,16 +58,16 @@ class ViewController: UIViewController {
     }
     
     @IBAction func tryBtn(_ sender: Any) {
-        // create the alert
+        
         let title = currenColorName == referenceColorName ? "True" : "False"
         let message = "Reference  color: \(referenceColorName) \n Current color : \(currenColorName)."
         
-         let alert = UIAlertController(title: title, message: message, preferredStyle: UIAlertController.Style.alert)
+        let alert = UIAlertController(title: title, message: message, preferredStyle: UIAlertController.Style.actionSheet)
 
-         // add an action (button)
+         
          alert.addAction(UIAlertAction(title: "OK", style: UIAlertAction.Style.default, handler: nil))
 
-         // show the alert
+         
          self.present(alert, animated: true, completion: nil)
     }
     
