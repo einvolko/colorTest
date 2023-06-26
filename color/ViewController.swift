@@ -62,7 +62,7 @@ class ViewController: UIViewController {
         let title = currenColorName == referenceColorName ? "True" : "False"
         let message = "Reference  color: \(referenceColorName) \n Current color : \(currenColorName)."
         
-         let alert = UIAlertController(title: title, message: message, preferredStyle: UIAlertController.Style.alert)
+        let alert = UIAlertController(title: title, message: message, preferredStyle: UIAlertController.Style.actionSheet)
 
          
          alert.addAction(UIAlertAction(title: "OK", style: UIAlertAction.Style.default, handler: nil))
