@@ -58,16 +58,16 @@ class ViewController: UIViewController {
     }
     
     @IBAction func tryBtn(_ sender: Any) {
-        // create the alert
+        
         let title = currenColorName == referenceColorName ? "True" : "False"
         let message = "Reference  color: \(referenceColorName) \n Current color : \(currenColorName)."
         
          let alert = UIAlertController(title: title, message: message, preferredStyle: UIAlertController.Style.alert)
 
-         // add an action (button)
+         
          alert.addAction(UIAlertAction(title: "OK", style: UIAlertAction.Style.default, handler: nil))
 
-         // show the alert
+         
          self.present(alert, animated: true, completion: nil)
     }
     
