@@ -74,6 +74,7 @@ class ViewController: UIViewController {
     @objc func didTap() {
         self.view.endEditing(true)
     }
+<<<<<<< Updated upstream
     
     func rgbToLab (red: Int, green:Int, blue:Int) -> [Double]{
         
@@ -114,6 +115,13 @@ class ViewController: UIViewController {
         let cieA = 500 * (refX - refY)
         let cieB = 200 * (refY - refZ)
         return [cieL,cieA,cieB]
+=======
+    func changeProperties() {
+            colorView.backgroundColor = UIColor(red: CGFloat(redSloder.value),
+                                                green: CGFloat(greenSlider.value),
+                                                blue: CGFloat(blueSlider.value),
+                                                alpha: CGFloat(1))
+>>>>>>> Stashed changes
         
     }
     func changeProperties(red: Float, green: Float, blue: Float, view: UIView) {
@@ -174,7 +182,42 @@ class ViewController: UIViewController {
         changeProperties(red: redSloder.value, green: greenSlider.value, blue: blueSlider.value, view: currentView)
     }
     @IBAction func changeBlueSlider(_ sender: Any) {
+<<<<<<< Updated upstream
         changeProperties(red: redSloder.value, green: greenSlider.value, blue: blueSlider.value, view: currentView)
+=======
+            changeProperties()
+    }
+    @IBAction func resetButtonAction(_ sender: Any) {
+        greenSlider.value = 0.5
+        redSloder.value = 0.5
+        blueSlider.value = 0.5
+        changeProperties()
+    }
+    @IBAction func redTextFieldAction(_ sender: Any) {
+        guard let unwrappedText = redTextField.text else {return}
+        guard let unwrappedFloat = Float(unwrappedText) else {return}
+        redSloder.value = unwrappedFloat / 256.0
+        changeProperties()
+    }
+    @IBAction func greenTextFieldAction(_ sender: Any) {
+        guard let unwrappedText = greenTextField.text else {return}
+        guard let unwrappedFloat = Float(unwrappedText) else {return}
+        greenSlider.value = unwrappedFloat / 256.0
+        changeProperties()
+    }
+    @IBAction func blueTextFieldAction(_ sender: Any) {
+        guard let unwrappedText = blueTextField.text else {return}
+        guard let unwrappedFloat = Float(unwrappedText) else {return}
+        blueSlider.value = unwrappedFloat / 256.0
+        changeProperties()
+    }
+}
+extension ViewController: UITextFieldDelegate {
+    func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
+        let allowedCharacters = CharacterSet.decimalDigits
+        let characterSet = CharacterSet(charactersIn: string)
+        return allowedCharacters.isSuperset(of: characterSet)
+>>>>>>> Stashed changes
     }
 
 
