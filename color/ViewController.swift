@@ -46,7 +46,7 @@ class ViewController: UIViewController {
         redSloder.value = 0.5
         greenSlider.value = 0.5
         blueSlider.value = 0.5
-        colorLabel.text = ""
+        
         //print(nameColorArray[randomIndex])
     }
     
