@@ -1,0 +1,112 @@
+[
+    {
+        "cost": 400,
+        "name": "Margarita",
+        "descript": "Tasty pizza (450 gr)",
+        "type":
+        {
+            "pizza":
+            {}
+        }
+    },
+    {
+        "descript": "Pizza sicilia (480 gr)",
+        "cost": 500,
+        "name": "Sicilian",
+        "type":
+        {
+            "pizza":
+            {}
+        }
+    },
+    {
+        "type":
+        {
+            "pizza":
+            {}
+        },
+        "name": "4 Chese",
+        "cost": 500,
+        "descript": "4 chese"
+    },
+    {
+        "cost": 250,
+        "name": "Hamburger",
+        "type":
+        {
+            "burger":
+            {}
+        },
+        "descript": "Very very tasty burger (220 gr)"
+    },
+    {
+        "cost": 300,
+        "name": "Bacon cheseeburger",
+        "type":
+        {
+            "burger":
+            {}
+        },
+        "descript": "Bacon cheseeburger very well"
+    },
+    {
+        "descript": "Tea (0.5l)",
+        "name": "Tea",
+        "type":
+        {
+            "drink":
+            {}
+        },
+        "cost": 80
+    },
+    {
+        "cost": 200,
+        "type":
+        {
+            "drink":
+            {}
+        },
+        "descript": "Arabica cofee (0.2l)",
+        "name": "Cofee"
+    },
+    {
+        "cost": 500,
+        "descript": "Very tasty cake",
+        "name": "Honey Cake",
+        "type":
+        {
+            "cake":
+            {}
+        }
+    },
+    {
+        "name": "Paper",
+        "cost": 5,
+        "type":
+        {
+            "other":
+            {}
+        },
+        "descript": "Paper list white color"
+    },
+    {
+        "cost": 120,
+        "name": "Beer",
+        "descript": "Beer strong (0.5l)",
+        "type":
+        {
+            "alcohol":
+            {}
+        }
+    },
+    {
+        "name": "Parlament",
+        "type":
+        {
+            "sigarets":
+            {}
+        },
+        "descript": "Parlament",
+        "cost": 200
+    }
+]
